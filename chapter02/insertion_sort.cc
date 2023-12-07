@@ -5,12 +5,12 @@ int* insertion_sort(int *arr, int n) {
 	for (int i = 0; i < n; i++) {
 		int key = arr[i + 1];
 		int j = i;
-		
+			
 		while (j >= 0 && arr[j] > key) {
 			arr[j + 1] = arr[j];
 			j -= 1;
 		}
-		
+			
 		arr[j + 1] = key;
 	}
 
